@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    ---cor-primaria:#0A3871;
+    ---cor-secundaria:#495057;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #E5E5E5;
+}
+header{
+    padding: 1.5rem 0 0 1.5rem;
+    margin-left:0.5rem;
+}
+
+.logo{
+    width: 9%;
+    height: 7%;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 80vh;
+    padding:5% 0 5% auto;
+    margin-left: 4.5rem;
+}
+
+.texto_area{
+    width: 55%;
+    margin-left:7rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+  
+}
+
+#inserir_texto_area{
+    height: 70%;
+    padding: 0.6rem;
+    margin-top:100px;
+    width: 100%;
+    border:none;
+    background-color: #E5E5E5;
+    outline: none;
+    resize: none;
+}
+
+#inserir_texto_area::placeholder{
+    color:var(---cor-primaria);
+    font-size: 2rem;
+}
+
+.info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.25rem;
+    color:var(---cor-secundaria);
+}
+
+.icone_info{
+    height: 0.75rem;
+    margin-right:0.3rem ;   
+}
+
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.btn_criptografar, .btn_descriptografar, .btn_copiar{
+    width: 15.6rem;
+    height: 3.75rem;
+    margin:1rem;
+    font-size: 1rem;
+    border: solid 0.03rem var(---cor-primaria);
+    border-radius: 24px;
+}
+
+.btn_criptografar{
+    background-color: var(---cor-primaria);
+    color: #ffff;
+    margin-left: 0;
+}
+
+.btn_descriptografar{
+    background-color: #D8DFE8;
+    color: var(---cor-primaria);
+    margin-right: 0;
+}
+
+.area_resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 2rem;
+    width: 30%;
+    height: 100%;
+}
+.area_resultado_mensagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:var(---cor-secundaria);
+    width: 100%;
+    height: 80%;
+    gap: 0.75rem;
+}
+.area_resultado_image{
+    width: 90%;
+    height: 60%;
+    margin: 5%;
+}
+.area_resultado_final{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    padding: 3%;
+    top: 2.5rem;
+    left: 1.25rem;
+    border-radius: 2rem;
+    background: #FFFFFF;
+}
+
+#area_resultado_input{
+    background: #FFFFFF;
+    border: none;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    line-height: 2.25rem;
+    color:var(---cor-secundaria);
+    gap: 1.25rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    resize: none;
+}
+
+.btn_copiar{
+    align-self: center;
+    color:var(---cor-primaria);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    font-size: 0.75rem;
+}
+.container_links_footer{
+    display: flex;
+    list-style: none;
+}
+.links_footer{
+    margin: 0 0.75rem 0 0.75rem;
+    text-decoration: none;
+}
+
+.logos_footer{
+    height:2rem ;
+}

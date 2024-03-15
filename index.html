@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo_cabecalho" src="/image/logo-alura.png" alt="logo da alura">
+    </header>
+    <main>
+        
+        <section class="texto_area">
+            <textarea id="inserir_texto_area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+           
+            <div class="info">
+                <img class="icone_info" src="/image/exclamacao.png" alt="logo exclamaço">
+                <h5>Apenas letras minúsculas e sem acento.</h5>
+            </div>
+            
+            <div class="btns">
+                <button onclick="criptografar()" class="btn_criptografar">
+                    Criptografar
+                </button>
+                <button onclick="descriptografar()" class="btn_descriptografar">
+                    Descriptografar
+                </button>
+            </div>
+        </section>
+        
+        <section class="area_resultado">          
+            <div class="area_resultado_mensagem">
+                <img class="area_resultado_image" src="/image/High quality products 1 1.png" alt="">
+                <h3>Nenhuma mensagem encontrada</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>    
+            </div>
+            <div class="area_resultado_final">
+                <textarea id="area_resultado_input" ></textarea>
+                <button onclick="copiar()" class="btn_copiar">copiar</button>
+            </div>  
+        </section>
+    </main>
+    <footer>
+       <div class="container_links_footer">
+                <li>
+                    <a class="links_footer" href="https://github.com/viniineves"><img class="logos_footer" src="/image/github.png" alt="logo github">Github</a>
+                </li>
+                <li>    
+                    <a class="links_footer" href="https://www.linkedin.com/in/vini-neves-dev"><img class="logos_footer" src="/image/linkedin.png" alt="logo linkedin">Linkedin</a>
+                </li>
+         </div>
+       <p>Developed by viniineves</p>
+        
+    </footer>    
+    <script src="script.js"></script>
+</body>
+
+</html>
